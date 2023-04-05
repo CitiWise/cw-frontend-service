@@ -1,0 +1,124 @@
+.navbar {
+  background-color: rgba(34, 50, 66, 1);
+  padding: 0.3rem 0rem;
+  padding-bottom: 0;
+  position: relative;
+  :global {
+    .navbar-brand {
+      margin-bottom: 0.3rem;
+      padding-left: 1rem;
+    }
+    .navbar-nav {
+      flex-grow: 1;
+      .end_elements {
+        display: flex;
+
+        button {
+          color: ghostwhite;
+          font-weight: bolder;
+        }
+      }
+
+      li {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.1rem;
+        padding: 0 2.7vw;
+        padding-bottom: 0.2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        &:first-child {
+          margin-left: 0rem;
+        }
+        &:last-child {
+          margin-left: auto;
+          padding: 0 1rem;
+        }
+        .nav-link {
+          // margin-left: 3rem;
+          color: red;
+        }
+        a {
+          color: rgba(220, 220, 220, 1) !important;
+        }
+        &.active {
+          border-bottom: 4px solid rgba(24, 144, 255, 1);
+          a {
+            color: white !important;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbarDrawer {
+  // padding: 0.3rem 0rem;
+  width: 100%;
+  padding-bottom: 0;
+  :global {
+    .navbar-brand {
+      margin-bottom: 0.3rem;
+    }
+    .navbar-nav {
+      width: 100%;
+      div {
+        padding-right: 150px;
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        a {
+          color: rgb(0, 0, 0) !important;
+        }
+        &.active {
+          border-bottom: 2px solid rgba(24, 144, 255, 1);
+          a {
+            color: rgb(0, 0, 0) !important;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+#right-slideBar-buttons {
+  color: white;
+}
+
+#hamburgForNavbar {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.logoutButtonWithResponsivness {
+  background-color: rgba(24, 144, 255, 1);
+  display: flex;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.logoutButtonWithResponsivness > a {
+  color: white !important;
+}
+#sidebarResponsivness {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 5rem);
+}
+@media screen and (max-width: 990px) {
+  .navbarForLargeScreen {
+    display: none;
+  }
+  #hamburgForNavbar {
+    display: block;
+  }
+  .navbar {
+    padding-left: 40px;
+  }
+}

@@ -1,0 +1,15 @@
+export const envs = {
+  appType: process.env.REACT_APP_APP_TYPE || "",
+  clientId: process.env.REACT_APP_API_CLIENTID,
+  redirectUrl: process.env.REACT_APP_API_REDIRECT_URL,
+  apiState: process.env.REACT_APP_API_STATE,
+  umsBaseUrl: process.env.REACT_APP_UMS_API_URL,
+  vmsBaseUrl: process.env.REACT_APP_VMS_API_URL,
+  cmsBaseUrl: process.env.REACT_APP_CMS_API_URL,
+  wmsBaseUrl: process.env.REACT_APP_WMS_API_URL,
+  hmsBaseUrl: process.env.REACT_APP_HMS_API_URL,
+  openBaseUrl: process.env.REACT_APP_OPEN_API_URL,
+  nmsBaseUrl: process.env.REACT_APP_NMS_API_URL,
+  bmsBaseUrl: process.env.REACT_APP_BMS_API_URL,
+  socketUrl: process.env.REACT_APP_WEBSOCKET_URL,
+};

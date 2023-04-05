@@ -1,0 +1,1 @@
+export { CustomTablePagination } from "./CustomTablePagination";

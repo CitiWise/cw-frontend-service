@@ -1,0 +1,29 @@
+.formComponent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .form {
+    width: 100%;
+    min-width: 20rem;
+    color: rgba(87, 87, 87, 1);
+  }
+
+  .input {
+    border-radius: 10px !important;
+    font-size: 1.4rem !important;
+    :global {
+      .ant-input-prefix {
+        margin-right: 10px;
+        :local(svg) {
+          color: rgba(87, 87, 87, 0.4);
+        }
+      }
+    }
+  }
+
+  button {
+    margin-right: 0.5pc;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,61 @@
+.drawer {
+  display: none;
+}
+#hamburgForNavbar {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+#hamburgForNavbarRight {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+#navbarDrawer {
+  // padding: 0.3rem 0rem;
+  width: 100%;
+  padding-bottom: 0;
+  :global {
+    .navbar-brand {
+      margin-bottom: 0.3rem;
+    }
+    .navbar-nav {
+      width: 100%;
+      div {
+        padding-right: 150px;
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        a {
+          color: rgb(0, 0, 0) !important;
+        }
+        &.active {
+          border-bottom: 2px solid rgba(24, 144, 255, 1);
+          a {
+            color: rgb(0, 0, 0) !important;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+.sideDrawer {
+  transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 990px) {
+  #hamburgForNavbar,
+  .drawer {
+    display: block;
+  }
+  #hamburgForNavbarRight {
+    display: block !important;
+  }
+  .sideDrawer,
+  .navbarForLargeScreen {
+    display: none;
+  }
+}

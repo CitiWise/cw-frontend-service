@@ -1,0 +1,60 @@
+.pickupAddress {
+  gap: 2px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  .tag {
+    float: right;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+  }
+  .center_align {
+    margin: 0 auto;
+  }
+}
+
+.pickupDetails {
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.orderStatusFilter {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.selectCluster {
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.wFull {
+  width: 100%;
+}
+
+.b2bTag {
+  margin-top: 0.3rem;
+}
+
+.ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: rtl;
+}
+
+.exportBtn {
+  margin-top: 1.5rem;
+  color: white;
+  background-color: #007bff;
+}

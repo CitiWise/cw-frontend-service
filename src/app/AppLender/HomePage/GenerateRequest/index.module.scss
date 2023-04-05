@@ -1,0 +1,44 @@
+.manualOrder {
+  background-color: #fff;
+  height: 100vh;
+  overflow: scroll;
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    .backButton {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .outerContainer {
+    background-color: #e5e5e5;
+  }
+
+  .innerContainer {
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    height: 100vh;
+    overflow: scroll;
+    padding-bottom: 7rem; // to balance ant deisgn form bug
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .cardStyle {
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .heading {
+      margin-bottom: 1rem;
+    }
+  }
+}

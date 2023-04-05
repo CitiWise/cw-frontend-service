@@ -1,0 +1,147 @@
+.main {
+  width: 100%;
+  background-color: white;
+  padding: 0 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  .row1 {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .download {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        margin-top: calc(1rem - 1.5px);
+        color: white;
+        background-color: #007bff;
+      }
+      button:hover {
+        background-color: #007bff;
+        color: white;
+      }
+    }
+
+    label {
+      margin-bottom: 0.1rem;
+      font-weight: 600;
+    }
+
+    .space-btw {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      & > div {
+        margin-right: 1rem;
+      }
+    }
+
+    .date {
+      display: flex;
+      .dateSearch {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        cursor: pointer;
+      }
+    }
+    :global {
+      font-size: 0.9rem;
+      font-weight: 600;
+      .ant-space {
+        gap: 3px !important;
+      }
+      .ant-picker {
+        border-radius: 4px;
+        background: rgba(245, 245, 245, 1);
+        color: rgba(79, 79, 79, 1);
+        font-weight: 600;
+        min-width: 9rem;
+        border: unset;
+        .ant-picker-suffix,
+        .ant-picker-clear {
+          color: rgba(79, 79, 79, 1);
+        }
+        input::placeholder {
+          color: rgba(79, 79, 79, 0.7);
+        }
+      }
+      button {
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: 700;
+        height: auto;
+        .anticon {
+          vertical-align: 0;
+        }
+      }
+    }
+  }
+  .row2 {
+    padding: 1.5rem 0;
+    button {
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.5rem 2rem;
+      height: auto;
+    }
+  }
+  .row3 {
+    margin: 0.5rem 0;
+
+    button {
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      height: auto;
+    }
+  }
+  .row4 {
+    padding: 0.5rem 0;
+
+    button {
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.5rem 2rem;
+      height: auto;
+    }
+  }
+  .searchOrder {
+    width: 70%;
+  }
+}
+
+.filterByDateTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #111111;
+}
+.export_button {
+  color: white;
+  background-color: #007bff;
+  position: absolute;
+  right: -36rem;
+  bottom: -0.1rem;
+}
+.export_button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.bulkSyncOrders {
+  width: 8rem;
+}
+
+.BSProgress {
+  display: flex;
+  gap: 1.5rem;
+}

@@ -1,0 +1,54 @@
+.formComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  .form {
+    width: 100%;
+    min-width: 20rem;
+    color: rgba(87, 87, 87, 1);
+  }
+
+  .rightFormComponent {
+    margin-left: 1em;
+  }
+
+  .selectDescription {
+    margin-top: 0.5rem;
+    color: #0f599e;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+
+  .input {
+    border-radius: 10px !important;
+    font-size: 1.4rem !important;
+    :global {
+      .ant-input-prefix {
+        margin-right: 10px;
+        :local(svg) {
+          color: rgba(87, 87, 87, 0.4);
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 3.5rem !important;
+    text-align: right;
+    :global {
+      .ant-btn {
+        width: 13rem;
+        margin-right: 0.5rem;
+        height: auto;
+        font-size: 1.1rem;
+        &:nth-child(2) {
+          margin-right: 0;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}

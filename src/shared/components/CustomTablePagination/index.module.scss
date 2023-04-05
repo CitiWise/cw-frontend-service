@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  float: left;
+  .table {
+    flex: 1 1 1px;
+    max-height: 100%;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    :global {
+      .ant-spin-nested-loading,
+      .ant-spin-container,
+      .ant-table,
+      .ant-table-container {
+        height: 100%;
+      }
+      .ant-table-container .ant-table-body {
+        overflow-y: auto;
+      }
+      th {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      td {
+        font-size: 0.8rem;
+        font-weight: 400;
+        width: 120px;
+        text-align: center;
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+  .pagination {
+    align-self: flex-end;
+    padding: 1rem;
+    :global {
+      button.ant-pagination-item-link,
+      .ant-pagination-item {
+        border-radius: 2px;
+        .anticon {
+          vertical-align: 0.1em;
+        }
+      }
+    }
+  }
+
+  .editButton {
+    margin-left: 1.375rem;
+  }
+}

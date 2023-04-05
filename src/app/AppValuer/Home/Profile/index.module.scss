@@ -1,0 +1,41 @@
+.profilePage {
+  padding: 1rem 1.5rem;
+  overflow: scroll !important;
+  flex-basis: inherit;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .title {
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    margin-right: 0.5pc;
+  }
+}
+@media screen and (max-width: 990px) {
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+  #titleId {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .buttonsForResponsivness {
+    margin-bottom: 1.5rem;
+  }
+  .profilePage {
+    padding-top: 0;
+  }
+}
