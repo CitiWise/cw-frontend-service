@@ -1,11 +1,9 @@
 .leftComponent {
-  background: linear-gradient(26.3deg, #0245a6 -35.69%, #63d7ff 103.01%);
+  background: linear-gradient(26.3deg, #01468f -35.69%, #0067d4 103.01%);
 }
-.topLogoImage {
-  top: 2rem;
-  left: 2.5rem;
-  position: absolute;
-  height: 2rem;
+.logoImage {
+  margin-top:15rem;
+  width:30rem;
 }
 .topImage {
   top: 0.8rem;
@@ -75,7 +73,6 @@
   color: white;
   font-size: 3.5rem;
   font-weight: 800;
-  margin-top: 9rem;
   margin-left: 2.5rem;
   line-height: 4.5rem;
   @media (max-width: 1200px) {
@@ -97,6 +94,10 @@
 }
 .tabs {
   width: 80%;
+}
+
+#loginPageMainDiv {
+  height:100vh;
 }
 
 @media screen and (max-width: 990px) {

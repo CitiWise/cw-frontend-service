@@ -140,13 +140,10 @@ export function Login() {
   return (
     <Row className="h-100" id={styles.loginPageMainDiv}>
       <Col md={24} lg={13} sm={24} className={styles.leftComponent}>
-        <img src={logoWhite} alt="logo" className={styles.topLogoImage} />
+        <img src={logoWhite} alt="logo" className={styles.logoImage} />
         <div className={styles.leftTitle}>
-          <p>Craft unmatched</p>
-          <p>shopping experiences</p>
-          <p>for your customers</p>
           <p className="t2">
-            with <span>BETTER CONTROL</span>
+            FAST AND <span>ACCURATE</span>
           </p>
         </div>
       </Col>

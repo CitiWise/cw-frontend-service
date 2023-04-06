@@ -43,14 +43,11 @@ function SignUpComponent(props: any) {
   };
   return (
     <Row className="h-100">
-      <Col span={8} id={styles.leftComponent}>
-        <img src={logoWhite} alt="logo" className={styles.topLogoImage} />
+      <Col md={24} lg={13} sm={24} id={styles.leftComponent}>
+        <img src={logoWhite} alt="logo" className={styles.logoImage} />
         <div className={styles.leftTitle}>
-          <p>CITIWISE</p>
-          <p>VALUER SIGNUP</p>
-          <p>Partner with us </p>
           <p className="t2">
-            fast, <span>ACCURATE</span>
+            FAST AND <span>ACCURATE</span>
           </p>
         </div>
       </Col>
